@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+        html {
+            font-family: 'Inter', system-ui, "Roboto", "Segoe UI", Helvetica Neue, sans-serif; }
+        @supports (font-variation-settings: normal) {
+          html { font-family: 'Inter var', system-ui, "Roboto", "Segoe UI", Helvetica Neue, sans-serif; }
+        }
+        body {
+            font-family: "Inter";
+            font-size: 16px;
+            font-size: calc(1em + 0.5vw);
+            line-height: 1.5;
+
+            background-color: #100F17;
+            color: #efefef;
+        }
+        .header,
+        .footer {
+            background-color: #060508;
+        }
+
+        h1,h2,h3,h4,.nav {
+            font-family: "League Spartan", "Avenir Next", Avenir;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline-block;
+        }
+        nav li + li {
+            margin-left: 0.75vw;
+        }
+
+        .logo {
+            letter-spacing: 0.05em;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: linear-gradient(45deg, #000, #060508);
+        }
+        @supports (background-size: cover) {
+            .hero {
+                background-image: url('images/hero-1280.jpg');
+                background-size: cover;
+            }
+            @media (min-width: 1980px) {
+                .hero {
+                    background-image: url('images/hero-2048.jpg');
+                } 
+            }
+        }
+
+        .lead {
+            font-size: 1.5em;
+        }
+        .text-secondary {
+            font-size: 0.85em;
+            color: #757283;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 16px;
+            color: #757283;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="navbar navbar-expand navbar-dark py-0">
+            <div class="container flex-column flex-md-row align-items-center">
+                <a class="logo col-12 col-md-4 text-center text-md-left">New Games</a>
+                <nav class="navbar-nav col-12 col-md-8 flex-row justify-content-center justify-content-md-start py-3 pl-md-3">
+                    <div class="row">
+                        <ul class="ml-3 ml-md-5">
+                            <li class="nav-item"><a href="#">Games</a></li>
+                            <li class="nav-item"><a href="#">Support</a></li>
+                            <li class="nav-item"><a href="#">Careers</a></li>
+                            <li class="nav-item"><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero py-5 mb-md-5">
+            <div class="container py-md-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-md-right">
+                        <h1 class="pt-2">The Studio</h1>
+                    </div>
+                    <div class="col-12 col-md-8 pl-md-5">
+                        <p class="lead">
+                            New Games Studio is a new game studio, currently working on our first release. It is a card-based science-fiction game in a 32-bit style. We are hiring, continue reading below for more information about our vacancies.
+                        </p>
+                        <p class="text-secondary">The due date for the game is Fall 2020.</p>
+                        <div class="badges pt-3">
+                            <img class="play-store" src="images/store-badges.png" alt="Coming soon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="careers py-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-md-right">
+                        <h2 class="pt-2">Careers</h2>
+                        <p class="text-secondary">Want to make great games?<br/>WE ARE HIRING!</p>
+                        <p class="text-secondary">Contact us via:<br/><a href="mailto:ASEM@HAYATGAMES.COM">careers@example.com</a></p>
+                    </div>
+                    <div class="col-12 col-md-7 pl-md-5">
+                        <p>Our games studio is looking for talented freelance illustrators, to help us with card illustrations for our new IP. It is a 32-bit science fiction game set in the year 3030. We are looking for artists that can show experience in this style in their portfolio.</p>
+                        <p>Job Type: Contract, Remote</p>
+                        <p><strong>Required Skills</strong></p>
+                        <ul>
+                            <li>A developed eye and strong aesthetic.</li>
+                            <li>Ability to create Illustrations of environments and/or characters/creatures/weapons.</li>
+                            <li>Ability to create composition sketches.</li>
+                            <li>Ability to take creative direction and feedback.</li>
+                        </ul>
+                        <p>Our price is 300USD per illustration.</p>
+                        <p>Applications without a portfolio will not be considered.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="col-12 col-md-8 offset-md-4 pl-md-5">
+                    <p class="copy">Copyright © 2019 NEW GAMES STUDIO.<span class="d-block d-md-inline" > </span>All Rights Reserved.</p>
+                    <p class="copy">Web Design by <a href="https://www.brendansparrow.com">Brendan sparrow</a>.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

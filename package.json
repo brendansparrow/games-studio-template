@@ -1,0 +1,15 @@
+{
+  "name": "game-studio-template",
+  "version": "1.0.0",
+  "description": "A simple Bootstrap template for a fledgling game studio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brendan Sparrow",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "parcel": "^1.12.4"
+  }
+}
